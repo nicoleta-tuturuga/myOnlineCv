@@ -1,0 +1,28 @@
+/* Portofolio Container */
+.portofolio-container {
+    font-size: 1.7rem;
+    margin: 15rem 20rem;
+}
+
+ /* .projects-container {
+    display: flex;
+} */
+
+
+.the-mover-game, .movie-app {
+    /* width: 50%; */
+    margin-bottom: 10rem;
+}
+
+.the-mover-game {
+    /* margin-right: 4rem; */
+}
+
+.the-mover-game > img, .movie-app > img {
+    width: 100%;
+} 
+
+
+.modal-img {
+    width: 100%;
+}

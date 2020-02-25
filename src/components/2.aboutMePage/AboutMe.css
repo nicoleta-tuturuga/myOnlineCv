@@ -1,0 +1,104 @@
+/*  ----About me Page container------- */
+
+.about-me-container {
+    margin: 15rem 12rem;
+    /* width: 100%; */
+}
+
+.about-me-info-wrapper {
+    /* display: flex; */
+    margin-bottom: 10rem;
+}
+
+.about-me-img {
+    width: 100%;
+    padding: 2rem;
+    animation-duration: 3s;
+    /* animation-delay: 2s; */
+}
+
+.about-me-img>img {
+    width: 90%;
+    /* -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  width: 50%; 
+  margin: 0 auto 40px; 
+  position: relative; */
+    border: 5px solid #FFD18F;
+    outline: 5px solid transparent;
+}
+
+.about-me-img>img :hover {
+    outline: 5px solid #9E8463;
+    outline-offset: 5px;
+}
+
+.about-me-img-details {
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    animation-duration: 6s;
+    animation-delay: 16s;
+}
+
+.about-me-img-details li {
+    list-style-type: none;
+}
+
+.about-me-btns>button {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 10rem;
+    margin: 2rem 2rem;
+    animation-duration: 6s;
+    animation-delay: 6s;
+}
+
+.about-me-description {
+    width: 50%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    animation-duration: 3s;
+}
+
+.progress-bar-area>p {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.progress-bar {
+    width: 60%;
+    height: 1rem;
+    position: relative;
+    background: #555;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.progress-bar>span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(43, 194, 83);
+    background-image: linear-gradient( center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+    width: 0;
+}
+
+span.expanded {
+    width: 90%;
+    transition: width 2s linear;
+}
+
+span.exppandedCss {
+    width: 50%;
+    transition: width 2s linear;
+}

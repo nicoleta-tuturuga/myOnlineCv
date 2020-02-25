@@ -1,0 +1,38 @@
+.side-link-page {
+    position: absolute;
+    top: calc(50% - 12px);
+    width: 28rem;
+    left: -12rem;
+    top: 34rem;
+}
+
+.side-link-page > p {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.17em;
+    transform: rotate(-90deg);
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+.side-link-page > p::before {
+    content: "";
+    width: 3rem;
+    height: 0.1rem;
+    position: absolute;
+    left: 22rem;
+    top: 1.6rem;
+    background-color: black;
+}
+
+.side-link-page > p::after {
+    content: "";
+    width: 3rem;
+    height: 0.1rem;
+    position: absolute;
+    left: 2rem;
+    top: 1.6rem;
+    background-color: black;
+}

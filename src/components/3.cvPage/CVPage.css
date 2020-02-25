@@ -1,0 +1,111 @@
+/* CV Page container */
+
+.root-parent-myCV > img {
+    /* background-image: url("../../assets/images/backgrounds/photo-1502465771179-51f3535da42c.jpg"); */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-position: center;
+    /* background-position-x: center;
+    background-position-y: center; */
+    /* background-repeat: repeat-x; */
+    background-size: cover;
+    z-index: -1;
+}
+
+.cv-container {
+    margin: 15rem 20rem;
+    font-size: 1.7rem;
+}
+
+.cv-container li {
+    list-style: none;
+}
+
+.section-title {
+    font-size: 2rem;
+}
+
+.my-cv-contact-info {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.my-cv-contact-info > p:first-child {
+    margin-right: 4rem;
+}
+
+.cv-container-wrapper {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.education-container {
+    width: 45%;
+    margin-right: 5rem;
+    border: 1px solid black;
+    padding: 4rem;
+    background-color: rgb(204, 204, 204);
+    animation-duration: 3s;
+    /* animation-delay: 2s; */
+}
+
+.timeline::before {
+    content: ' ';
+    background: #929292;
+    position: absolute;
+    left: 1.7rem;
+    top: 10rem;
+    width: 0.2rem;
+    height: 87%;
+}
+
+.timeline > li {
+    display: flex;
+}
+
+.timeline > li > button {
+    /* margin-right: 1rem; */
+    background-color: #ffffff;
+    /* display: inline-block; */
+    border-radius: 50%;
+    border: 3px solid #2a2a2b;
+    left: 0.8rem;
+    width: 2rem;
+    height: 2rem;
+    /* z-index: 400; */
+    top: 9.8rem;
+    position: absolute;
+    outline: none;
+}
+
+/* .timeline > li > button::before {
+    content: ' ';
+    background-color: #ffffff;
+    display: inline-block;
+    border-radius: 50%;
+    border: 3px solid #2a2a2b;
+    left: -3.2rem;
+    width: 2rem;
+    height: 2rem;
+    /* z-index: 400; */
+    /* top: 2.9rem;
+    position: relative;
+    cursor: pointer; 
+}*/
+
+
+.experience-container {
+    margin-top: 5rem;
+    width: 45%;
+    height: auto;
+    border: 1px solid black;
+    padding: 4rem;
+    background-color: rgb(204, 204, 204);
+    animation-duration: 3s;
+    animation-delay: 1s;
+}

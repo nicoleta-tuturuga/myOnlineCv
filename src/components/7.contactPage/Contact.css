@@ -1,0 +1,65 @@
+
+/* Contact container */
+.contact-img-container {
+    background-image: url("../../assets/images/backgrounds/photo-1474524955719-b9f87c50ce47\ \(1\).jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6); */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact-info-container {
+    font-size: 1.7rem;
+    margin: 15rem 20rem;
+}
+
+.contact-forms {
+    display: flex;
+
+}
+
+.get-in-touch {
+    font-size: 4rem;
+    color: rgb(100, 90, 90);
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    width: 45%;
+    background-color: white;
+    margin-right: 4rem;
+}
+
+.google-map {
+    width: 100%;
+}
+
+.google-map > iframe {
+    width: 100%;
+    height: 30rem;
+}
+
+.contact-me-form {
+    width: 45%;
+    background-color: white;
+
+}
+
+.contact-info, .contact-me-form {
+    border: 1px solid black;  
+    padding: 4rem;  
+}
+
+.form input, textarea {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 2rem;
+    padding: 0.7rem;
+}

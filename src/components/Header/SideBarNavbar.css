@@ -1,0 +1,24 @@
+.side-bar-nav-container {
+    padding: 1rem;
+    /* margin: 3rem; */
+    position: fixed;
+    right: 1rem;
+    top: 28rem
+}
+
+.side-nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.side-nav-link {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.bullet {
+    width: 2rem;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 1rem;
+}

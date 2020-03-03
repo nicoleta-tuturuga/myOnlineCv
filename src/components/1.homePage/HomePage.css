@@ -24,33 +24,18 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6); */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
-/* .img-container {
-     width: 100%;
-    height: 100%;
-    background-image: url("../imgs/photo-1418065460487-3e41a6c84dc5.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-     width: 100vw;
-    height: 100vh; 
-    background-size: 100% auto; 
-    background-size: cover;
-
-} */
-
 #head-title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .main-presentation {
     width: 40rem;
     margin-right: 15rem;
+    margin-left: 12rem;
+    margin-top: 11rem;
     /* position: absolute;
     top: 15rem;
     left: 12rem; */
@@ -59,13 +44,45 @@ body, html {
     align-items: center; */
 }
 
-/* .main-presentation > h3 {
+.main-presentation>p {
+    font-size: 1.7rem;
     font-weight: 600;
-} */
+}
 
-.main-presentation > p {
-    font-size: 2.2rem;
-    font-weight: 600;
+.type-writter-effect>p {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: 5px solid black;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: black;
+    }
 }
 
 /* Social network icons */
@@ -74,26 +91,55 @@ body, html {
     display: flex;
 }
 
-.social-networks > li {
+/* .social-networks>li {
     list-style-type: none;
     margin-right: 3rem;
-    width: 4rem;
-    height: 4rem;
-    font-size: 2.5rem;
-}
+    width: 2rem;
+    height: 2rem;
+} */
 
-.social-networks > li > a {
-    color: black;
-}
 
 .arrow-wrap {
-    color: #FFFFFF;
     text-shadow: 0 0 10px;
-    font-size: 4rem;
+    font-size: 3.5rem;
     position: fixed;
     bottom: 3rem;
     right: 50%;
     animation-duration: 3s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
+}
+
+.arrow-wrap a {
+    color: #FFFFFF;
+}
+
+@media only screen and (min-width: 768px) {
+    #head-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .main-presentation>p {
+        font-size: 2rem;
+    }
+    /* Social network icons */
+    .social-networks>li {
+        margin-right: 3rem;
+        width: 4rem;
+        height: 4rem;
+        font-size: 2.5rem;
+    }
+    .arrow-wrap {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #head-title {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .main-presentation>p {
+        font-size: 2.2rem;
+    }
 }

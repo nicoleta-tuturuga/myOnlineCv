@@ -1,28 +1,30 @@
 /* Portofolio Container */
+
 .portofolio-container {
     font-size: 1.7rem;
-    margin: 15rem 20rem;
+    margin: 10rem 5rem;
 }
 
- /* .projects-container {
-    display: flex;
-} */
-
-
 .the-mover-game, .movie-app {
-    /* width: 50%; */
     margin-bottom: 10rem;
 }
 
-.the-mover-game {
-    /* margin-right: 4rem; */
-}
-
-.the-mover-game > img, .movie-app > img {
+.the-mover-game>img, .movie-app>img {
     width: 100%;
-} 
-
+}
 
 .modal-img {
     width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .portofolio-container {
+        margin: 15rem 12rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .portofolio-container {
+        margin: 15rem 18rem;
+    }
 }

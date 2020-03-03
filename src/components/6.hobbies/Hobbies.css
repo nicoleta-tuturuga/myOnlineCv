@@ -1,8 +1,7 @@
 /* <!-- Hobbies --> */
 .hobbies-page {
     font-size: 1.7rem;
-    margin: 15rem 20rem;
-
+    margin: 10rem 2rem;
 }
 
 .hobbies-container img {
@@ -32,6 +31,8 @@
     color: #008080;
     font-style: italic;
     font-size: 20px;
+    margin-top: 4rem;
+    font-weight: 600;
 }
 
 .article-col {
@@ -76,23 +77,6 @@
     color: #999;
 }
 
-/* Search bar */
-/* .search-from {
-    color: #999;
-    margin-bottom: 30px;
-}
-
-.search-from button {
-    width: 30px;
-    height: 30px;
-    background-color: #ffffff;
-    border: 1px solid #999;
-}
-
-.fa-search {
-    color: #999;
-} */
-
 /* Other travels and cooking sections */
 .other-photos-container {
     margin-bottom: 50px;
@@ -102,3 +86,18 @@
     margin: 0 7px 7px 0;
 }
 
+/* .travel-gallery {
+    margin-bottom: 20rem;
+} */
+
+@media only screen and (min-width: 768px) {
+    .hobbies-page {
+        margin: 15rem 11rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .hobbies-page {
+        margin: 15rem 13rem;
+    }
+}

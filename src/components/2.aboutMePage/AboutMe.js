@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Link } from "react-router-dom";
 import SideBarNavbar from "../Header/SideBarNavbar";
+import StickyBtn from "../buttons/StickyBtn";
 
 
 const AboutMe = () => {
@@ -18,8 +19,12 @@ const AboutMe = () => {
         }, 3000);
         return () => clearTimeout(timer);
     }, []);
-    const load = expanded ? 'expanded' : '';
+    const loadHtml = expanded ? 'expandedHtml' : '';
     const loadCss = expanded ? 'exppandedCss' : '';
+    const loadBootstrap = expanded ? 'expandedBootstrap' : '';
+    const loadJs = expanded ? 'expandedJs' : '';
+    const loadReact = expanded ? 'expandedReact' : '';
+    const loadGit = expanded ? 'expandedGit' : '';
 
 
     return (
@@ -31,13 +36,20 @@ const AboutMe = () => {
 
             <div className="about-me-container row d-flex flex-wrap">
                 <div className="about-me-info-wrapper col-xs-12 col-md-12 col-lg-6">
-                    <div className="about-me-img animated bounceInLeft">
-                        <img
-                            src={require('../../assets/images/backgrounds/WhatsApp Image 2019-10-07 at 07.07.53.jpeg')}
-                            alt="This is me! Hi!" />
-                    </div>
+                    <a href="#">
+                        <div className="about-me-img animated bounceInLeft heartBeat">
+                            <img
+                                src={require('../../assets/images/backgrounds/WhatsApp Image 2019-10-07 at 07.07.53.jpeg')}
+                                alt="This is me! Hi!" />
+                                <Link to="/myCV">
+                                    <a href="#">
+                                        <button className="custom-styled-btn">Download CV</button>
+                                    </a>
+                                </Link>
+                        </div>
+                    </a>
                     <div className="about-me-img-details d-flex">
-                        <ul className="animated slideInUp col-xs-12 col-md-6 col-lg-6">
+                        <ul className="animated rotateInDownLeft col-xs-12 col-md-6 col-lg-6">
                             <li>
                                 Email: <a href="#">nicoleta.tuturuga@yahoo.com</a>
                             </li>
@@ -45,7 +57,7 @@ const AboutMe = () => {
                                 Phone number: 0741455980 
                             </li>
                         </ul>
-                        <ul className="animated slideInUp col-xs-12 col-md-6 col-lg-6">
+                        <ul className="animated rotateInDownLeft col-xs-12 col-md-6 col-lg-6">
                             <li>
                                 Date of birth: 07.04.1995
                             </li>
@@ -54,9 +66,13 @@ const AboutMe = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="about-me-btns animated slideInUp d-flex justify-content-center">
-                        <button>CV</button>
-                        <button>CONTACT</button>
+                    <div className="about-me-btns animated zoomInUp d-flex justify-content-center">
+                    <Link to="/myCV">
+                        <button className="custom-styled-btn">CV</button>
+                    </Link>
+                        <Link to="/contactPage">
+                            <button className="custom-styled-btn">CONTACT</button>
+                        </Link>
                     </div>
                 </div>
 
@@ -80,7 +96,7 @@ const AboutMe = () => {
                     <div className="progress-bar-area">
                         <p>HTML</p>
                         <div className="progress-bar">
-                            <span className={load}></span>
+                            <span className={loadHtml}></span>
                         </div>
                         <p>CSS</p>
                         <div className="progress-bar">
@@ -88,27 +104,32 @@ const AboutMe = () => {
                         </div>
                         <p>BOOTSTRAP</p>
                         <div className="progress-bar">
-                            <span className={load}></span>
+                            <span className={loadBootstrap}></span>
                         </div>
                         <p>JAVASCRIPT</p>
                         <div className="progress-bar">
-                            <span className={load}></span>
+                            <span className={loadJs}></span>
                         </div>
                         <p>REACT</p>
                         <div className="progress-bar">
-                            <span className={load}></span>
+                            <span className={loadReact}></span>
                         </div>
                         <p>GIT</p>
                         <div className="progress-bar">
-                            <span className={load}></span>
+                            <span className={loadGit}></span>
                         </div>
                     </div>
                 </div>
                 {/* </div> */}
+            
+            {/* <Footer /> */}
 
             </div>
 
+            <StickyBtn />
+
             <SideBarNavbar />
+
         </div>
     )
 }

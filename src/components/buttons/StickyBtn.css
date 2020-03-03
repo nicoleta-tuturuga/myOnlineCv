@@ -1,6 +1,13 @@
 .go-up-btn {
     position: fixed;
     right: 5.5rem;
-    bottom: 4rem;
+    bottom: 5rem;
     font-size: 5rem;
+    opacity: 0.7;
+    background-color: transparent;
+    border: none;
+}
+
+.go-up-btn:focus {
+    outline: none;
 }

@@ -1,14 +1,32 @@
+.navbar {
+    background-color: #f0e8e8;
+}
 
 .navbar-brand{
     font-family: 'Pacifico', cursive;
-    font-size: 2.7rem;
+    font-size: 2.2rem;
 }
 
 .nav-item {
-    font-size: 2.5rem;
+    font-size: 2rem;
     border-right: 1px solid black;
 }
 
 .navbar-brand, .nav-item a {
     color: black;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .navbar-brand{
+        font-size: 2.7rem;
+    }
+    
+    .nav-item {
+        font-size: 2.5rem;
+    }
 }

@@ -6,9 +6,11 @@ import "../sideLinkPage.css";
 import SideBarNavbar from "../Header/SideBarNavbar";
 import Carousel from "../Carousel";
 import Gallery from 'react-grid-gallery';
+import { SocialIcon } from 'react-social-icons';
 
 import StickyBtn from "../buttons/StickyBtn";
 import ExpandableText from "../buttons/ExpandableText";
+import Footer from "../footer/Footer";
 
 const Hobbies = () => {
 
@@ -18,65 +20,111 @@ const Hobbies = () => {
         require('../../assets/images/carousel/4.jpeg')
     ]
 
-    // const IMAGES = [
-    //     {
-    //         src: require('../../assets/images/hobbies/05b79f59-8006-4d44-9afb-a5b69704c90e.jpg'),
-    //         thumbnail: require('../../assets/images/hobbies/05b79f59-8006-4d44-9afb-a5b69704c90e.jpg'),
-    //         thumbnailWidth: 320,
-    //         thumbnailHeight: 174,
-    //         isSelected: true,
-    //         caption: "After Rain (Jeshu John - designerspics.com)"
-    //     }
-    // ]
 
     const IMAGES =
         [
             {
                 src: require('../../assets/images/hobbies/05b79f59-8006-4d44-9afb-a5b69704c90e.jpg'),
                 thumbnail: require('../../assets/images/hobbies/05b79f59-8006-4d44-9afb-a5b69704c90e.jpg'),
-                thumbnailWidth: 120,
-                thumbnailHeight: 140,
-                isSelected: true,
-                caption: "After Rain (Jeshu John - designerspics.com)"
+                thumbnailWidth: 170,
+                thumbnailHeight: 170,
+                isSelected: true
+            },
+            {
+                src: require('../../assets/images/hobbies/29536ea1-7ca6-4eae-b04b-c04d112f5f87.jpg'),
+                thumbnail: require('../../assets/images/hobbies/29536ea1-7ca6-4eae-b04b-c04d112f5f87.jpg'),
+                thumbnailWidth: 200,
+                thumbnailHeight: 212
+            },
+
+            {
+                src: require('../../assets/images/hobbies/19fd0410-a760-459d-988a-6dd5d82b35fd.jpg'),
+                thumbnail: require('../../assets/images/hobbies/19fd0410-a760-459d-988a-6dd5d82b35fd.jpg'),
+                thumbnailWidth: 250,
+                thumbnailHeight: 212
+            },
+            {
+                src: require('../../assets/images/hobbies/991f0c7e-c016-474e-9cb8-0505a325bc5f.jpg'),
+                thumbnail: require('../../assets/images/hobbies/991f0c7e-c016-474e-9cb8-0505a325bc5f.jpg'),
+                thumbnailWidth: 170,
+                thumbnailHeight: 174
+            },
+            {
+                src: require('../../assets/images/hobbies/85e446bd-4668-4ef2-b117-ab4f71723eef.jpg'),
+                thumbnail: require('../../assets/images/hobbies/85e446bd-4668-4ef2-b117-ab4f71723eef.jpg'),
+                thumbnailWidth: 320,
+                thumbnailHeight: 212
+            },
+
+            {
+                src: require('../../assets/images/hobbies/f0653171-8aaa-445f-b3f2-9db5f687f171.jpg'),
+                thumbnail: require('../../assets/images/hobbies/f0653171-8aaa-445f-b3f2-9db5f687f171.jpg'),
+                thumbnailWidth: 170,
+                thumbnailHeight: 212
+            },
+            {
+                src: require('../../assets/images/hobbies/70823f2f-260b-4da7-aba7-1d30e0b63e23.jpg'),
+                thumbnail: require('../../assets/images/hobbies/70823f2f-260b-4da7-aba7-1d30e0b63e23.jpg'),
+                thumbnailWidth: 250,
+                thumbnailHeight: 212
+            },
+            {
+                src: require('../../assets/images/hobbies/7c4de6fb-dc7a-4be9-a4ea-0ac7156852cf.jpg'),
+                thumbnail: require('../../assets/images/hobbies/7c4de6fb-dc7a-4be9-a4ea-0ac7156852cf.jpg'),
+                thumbnailWidth: 200,
+                thumbnailHeight: 212
+            },
+            {
+                src: require('../../assets/images/hobbies/6f9f7269-214d-4e43-8465-a2818303b5d1.jpg'),
+                thumbnail: require('../../assets/images/hobbies/6f9f7269-214d-4e43-8465-a2818303b5d1.jpg'),
+                thumbnailWidth: 400,
+                thumbnailHeight: 212
+            },
+            {
+                src: require('../../assets/images/hobbies/5f58717a-ffdf-4ff9-ac5d-192cbf44d0bd.jpg'),
+                thumbnail: require('../../assets/images/hobbies/5f58717a-ffdf-4ff9-ac5d-192cbf44d0bd.jpg'),
+                thumbnailWidth: 250,
+                thumbnailHeight: 212
             },
             {
                 src: require('../../assets/images/hobbies/35af7dba-ab07-4160-969a-7526d4a512c3.jpg'),
                 thumbnail: require('../../assets/images/hobbies/35af7dba-ab07-4160-969a-7526d4a512c3.jpg'),
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                tags: [{ value: "Ocean", title: "Ocean" }, { value: "People", title: "People" }],
-                caption: "Boats (Jeshu John - designerspics.com)"
+                thumbnailWidth: 200,
+                thumbnailHeight: 212
             },
 
             {
-                src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-                thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+                src: require('../../assets/images/hobbies/991e8b73-21f8-437e-ae3f-96fa03b164f8.jpg'),
+                thumbnail: require('../../assets/images/hobbies/991e8b73-21f8-437e-ae3f-96fa03b164f8.jpg'),
+                thumbnailWidth: 200,
+                thumbnailHeight: 212
+            },
+            {
+                src: require('../../assets/images/hobbies/74b97e45-7f1e-4613-a378-245a17f108ca.jpg'),
+                thumbnail: require('../../assets/images/hobbies/74b97e45-7f1e-4613-a378-245a17f108ca.jpg'),
                 thumbnailWidth: 320,
                 thumbnailHeight: 212
             },
             {
-                src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-                thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
-                thumbnailWidth: 320,
-                thumbnailHeight: 174,
-                isSelected: true,
-                caption: "After Rain (Jeshu John - designerspics.com)"
-            },
-            {
-                src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-                thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                tags: [{ value: "Ocean", title: "Ocean" }, { value: "People", title: "People" }],
-                caption: "Boats (Jeshu John - designerspics.com)"
-            },
-
-            {
-                src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-                thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
-                thumbnailWidth: 320,
+                src: require('../../assets/images/hobbies/47e6296d-5042-4a16-ba98-66accedda90e.jpg'),
+                thumbnail: require('../../assets/images/hobbies/47e6296d-5042-4a16-ba98-66accedda90e.jpg'),
+                thumbnailWidth: 170,
                 thumbnailHeight: 212
-            }]
+            },
+            {
+                src: require('../../assets/images/hobbies/781f1ec4-895f-4bea-b20b-883d4edd0646.jpg'),
+                thumbnail: require('../../assets/images/hobbies/781f1ec4-895f-4bea-b20b-883d4edd0646.jpg'),
+                thumbnailWidth: 290,
+                thumbnailHeight: 212
+            },
+            {
+                src: require('../../assets/images/hobbies/95601605-aa76-437a-8466-caa44a152fc6.jpg'),
+                thumbnail: require('../../assets/images/hobbies/95601605-aa76-437a-8466-caa44a152fc6.jpg'),
+                thumbnailWidth: 270,
+                thumbnailHeight: 212
+            }
+        ]
+
 
     return (
         <div>
@@ -88,292 +136,237 @@ const Hobbies = () => {
                 </div>
                 <p id="head-title">Hobbies</p>
 
+                <div class="hobbies-container-parent">
 
-                <div class="container">
+                    <div class="hobbies-container main-area d-flex flex-wrap">
+                        {/* <!-- First main column --> */}
+                        <div class="col1 col-lg-8">
 
-                        <div class="hobbies-container main-area d-flex flex-wrap">
-                            {/* <!-- First main column --> */}
-                            <div class="col1 col-lg-8">
+                            <Carousel
+                                carouselImg={carouselImages}>
+                            </Carousel>
 
-                                <Carousel 
-                                    carouselImg={carouselImages}>
-                                </Carousel>
-
-
-                                {/* <!-- Other related articles section --> */}
-                                <div class="other-articles">
-                                    <p>Read about my travels: </p>
-                                    <div class="article-first-row row d-flex">
-                                        <div class="article-col col-xs-12 col-lg-6">
+                            {/* <!-- Other related articles section --> */}
+                            <div class="other-articles">
+                                <p>Read about my travels: </p>
+                                <div class="article-first-row row d-flex">
+                                    <div class="article-col col-xs-12 col-lg-6">
+                                        <a href="#">
+                                            <img
+                                                src={require('../../assets/images/hobbies/0919db4e-1fbe-4ba1-b6f2-cc5762f27de4.jpg')} />
+                                        </a>
+                                        <h2 class="entry-header">
                                             <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/0919db4e-1fbe-4ba1-b6f2-cc5762f27de4.jpg')} />
+                                                <p class="title-header">Paris, France</p>
                                             </a>
-                                            <h2 class="entry-header">
-                                                <a href="#">
-                                                    <p class="title-header">Title here...</p>
-                                                </a>
-                                            </h2>
-                                            <div class="meta-header d-flex">
-                                                <p>Posted on <time class="entry-time">October 10, 2019</time></p>
-                                                <a href="#">
-                                                    <p>-Leave a comment</p>
-                                                </a>
-                                            </div>
-                                            <ExpandableText>
-                                                <p>
-                                                    Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                                                    default model text, and a search for 'lorem ipsum' will uncover many web sites still
-                                                    in
-                                                    their infancy. Various versions have evolved over the years, sometimes by accident,
-                                                    sometimes on purpose (injected humour and the like).
-                                    </p>
-                                            </ExpandableText>
-                                            {/* <button type="button" class="btn btn-outline-dark">Read more</button> */}
+                                        </h2>
+                                        <div class="meta-header d-flex">
+                                            <p><time class="entry-time">October, 2018</time></p>
                                         </div>
-
-                                        <div class="article-col col-xs-12 col-lg-6">
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/7940779e-6f86-4a82-9f03-6f5d41eff004.jpg')} />
-                                            </a>
-                                            <h2 class="entry-header">
-                                                <a href="#">
-                                                    <p class="title-header">Title here...</p>
-                                                </a>
-                                            </h2>
-                                            <div class="meta-header d-flex">
-                                                <p>Posted on <time class="entry-time">October 10, 2019</time></p>
-                                                <a href="#">
-                                                    <p>-Leave a comment</p>
-                                                </a>
-                                            </div>
-                                            <ExpandableText>
-                                                <p>
-                                                    Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                                                    default model text, and a search for 'lorem ipsum' will uncover many web sites still
-                                                    in
-                                                    their infancy. Various versions have evolved over the years, sometimes by accident,
-                                                    sometimes on purpose (injected humour and the like).
-                                        </p>
-
-                                            </ExpandableText>
-                                        </div>
-                                    </div>
-                                    <div class="article-second-row row">
-                                        <div class="article-col col-xs-12 col-lg-6">
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/b16a90ad-a8b6-48e2-b072-9dad323aaec8.jpg')} />
-                                            </a>
-                                            <h2 class="entry-header">
-                                                <a href="#">
-                                                    <p class="title-header">Title here...</p>
-                                                </a>
-                                            </h2>
-                                            <div class="meta-header d-flex">
-                                                <p>Posted on <time class="entry-time">October 10, 2019</time></p>
-                                                <a href="#">
-                                                    <p>-Leave a comment</p>
-                                                </a>
-                                            </div>
+                                        <ExpandableText>
                                             <p>
-                                                Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                                                default model text, and a search for 'lorem ipsum' will uncover many web sites still
-                                                in
-                                                their infancy. Various versions have evolved over the years, sometimes by accident,
-                                                sometimes on purpose (injected humour and the like).
-                            </p>
-                                            <button type="button" class="btn btn-outline-dark">Read more</button>
-                                        </div>
-                                        <div class="article-col col-xs-12 col-lg-6">
+                                                Paris is the capital and most populous city of France, with a population of 2,148,271 residents (official estimate, 1 January 2020) in an area of 105 square kilometres (41 square miles). Since the 17th century, Paris has been one of Europe's major centres of finance, diplomacy, commerce, fashion, science and the arts. The City of Paris is the centre and seat of government of the Île-de-France, or Paris Region, which has an estimated official 2020 population of 12,278,210, or about 18 percent of the population of France.
+                                            </p>
+                                        </ExpandableText>
+                                    </div>
+
+                                    <div class="article-col col-xs-12 col-lg-6">
+                                        <a href="#">
+                                            <img
+                                                src={require('../../assets/images/hobbies/7940779e-6f86-4a82-9f03-6f5d41eff004.jpg')} />
+                                        </a>
+                                        <h2 class="entry-header">
                                             <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/991e8b73-21f8-437e-ae3f-96fa03b164f8.jpg')} />
+                                                <p class="title-header">Maslinica, Croatia</p>
                                             </a>
-                                            <h2 class="entry-header">
-                                                <a href="#">
-                                                    <p class="title-header">Title here...</p>
-                                                </a>
-                                            </h2>
-                                            <div class="meta-header d-flex">
-                                                <p>Posted on <time class="entry-time">October 10, 2019</time></p>
-                                                <a href="#">
-                                                    <p>-Leave a comment</p>
-                                                </a>
-                                            </div>
+                                        </h2>
+                                        <div class="meta-header d-flex">
+                                            <p> <time class="entry-time">August, 2019</time></p>
+                                        </div>
+                                        <ExpandableText>
                                             <p>
-                                                Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                                                default model text, and a search for 'lorem ipsum' will uncover many web sites still
-                                                in
-                                                their infancy. Various versions have evolved over the years, sometimes by accident,
-                                                sometimes on purpose (injected humour and the like).
-                            </p>
-                                            <button type="button" class="btn btn-outline-dark">Read more</button>
-                                            <br />
-                                            <button type="button" class="btn more-btn btn-outline-dark">More related
-                                articles...</button>
-                                        </div>
+                                                Maslinica (Italian: Porto Olivetto) is a port village on the island of Šolta in Croatia in the Split-Dalmatia County. It is connected by the D111 highway. Maslinica has 208 inhabitants. The center of the village, the westernmost town of the island, the castle Martinis Marchi, now a luxury hotel with marina for about 60 boats.
+                                                During the time of the Austro-Hungarian Empire the villages of Šolta still have their Italian names as well as Porto Olivetto.
+                                                In the 19th century the best wine of the island came from Maslinica. The best qualities of national importance were created in the 1870s and 80s by Pietro degli Alberti from Porto Oliveto di Solta. At the Vienna World Fair in 1873 he received an honorary prize. At the Triester exhibition in 1882 he received a gold medal.
+                                            </p>
+                                        </ExpandableText>
                                     </div>
                                 </div>
-                            </div>
-
-                            {/* <!-- Sidebar - second main column --> */}
-                            <div class="col2 col-lg-4 d-flex flex-column">
-
-                                {/* <!-- Social network icons --> */}
-                                <div class="widget-wrap-social-networks">
-                                    <p class="title-header">Follow me on</p>
-                                    <ul class="social-networks d-flex justify-content-between">
-                                        <li>
-                                            <a href="https://www.instagram.com/nicotuturuga/?igshid=19603gdl5y8a0&fbclid=IwAR2ilC241XTONY6kJr3a2XzwEyorZI-x8CdL7uQzFFudpa7Ngy9YRp1VuFk"
-                                                title="Instagram" target="blank">
-                                                <i class="fa fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
+                                <div class="article-second-row row">
+                                    <div class="article-col col-xs-12 col-lg-6">
+                                        <a href="#">
+                                            <img
+                                                src={require('../../assets/images/hobbies/dubrovnik.jpg')} />
+                                        </a>
+                                        <h2 class="entry-header">
                                             <a href="#">
-                                                <i class="fa fa-facebook-square"></i>
+                                                <p class="title-header">Dubrovnik, Croatia</p>
                                             </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-envelope"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-pinterest"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-youtube"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                {/* <!-- Search bar --> */}
-                                <form class="search-from">
-                                    <label class="title-header" for="search">Search on the blog</label>
-                                    <div class="d-flex">
-                                        <input type="text" id="search" placeholder="Search this website" />
-                                        <button type="submit">
-                                            <i class="fa fa-search"></i>
-                                        </button>
+                                        </h2>
+                                        <div class="meta-header d-flex">
+                                            <p><time class="entry-time">August, 2019</time></p>
+                                        </div>
+                                        <ExpandableText>
+                                            <p>
+                                                Dubrovnik (historically Latin: Ragusa) is a city on the Adriatic Sea in southern Croatia. It is one of the most prominent tourist destinations in the Mediterranean Sea, a seaport and the centre of Dubrovnik-Neretva County. Its total population is 42,615 (census 2011). In 1979, the city of Dubrovnik joined the UNESCO list of World Heritage sites.
+                                                The prosperity of the city was historically based on maritime trade; as the capital of the maritime Republic of Ragusa, it achieved a high level of development, particularly during the 15th and 16th centuries, as it became notable for its wealth and skilled diplomacy.
+                                            </p>
+                                        </ExpandableText>
                                     </div>
-                                </form>
-
-                                {/* <!-- Other travels section --> */}
-                                <div class="other-travels">
-                                    <p class="title-header">Other travels</p>
-                                    <div class="other-photos-container">
-
-                                        <div class="d-flex">
-
-                                            {/* <Gallery images={IMAGES}/> */}
-
-                                            <a href="#gallery-grid">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/05b79f59-8006-4d44-9afb-a5b69704c90e.jpg')} />
-                                            </a>
+                                    <div class="article-col col-xs-12 col-lg-6">
+                                        <a href="#">
+                                            <img
+                                                src={require('../../assets/images/hobbies/b16a90ad-a8b6-48e2-b072-9dad323aaec8.jpg')} />
+                                        </a>
+                                        <h2 class="entry-header">
                                             <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/35af7dba-ab07-4160-969a-7526d4a512c3.jpg')} />
+                                                <p class="title-header">Alicante, Spain</p>
                                             </a>
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/19fd0410-a760-459d-988a-6dd5d82b35fd.jpg')} />
-                                            </a>
+                                        </h2>
+                                        <div class="meta-header d-flex">
+                                            <p><time class="entry-time">December, 2019</time></p>
                                         </div>
-                                        <div class="d-flex">
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/47e6296d-5042-4a16-ba98-66accedda90e.jpg')} />
-                                            </a>
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/85e446bd-4668-4ef2-b117-ab4f71723eef.jpg')} />
-                                            </a>
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/29536ea1-7ca6-4eae-b04b-c04d112f5f87.jpg')} />
-                                            </a>
-                                        </div>
-                                        <div class="d-flex">
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/f0653171-8aaa-445f-b3f2-9db5f687f171.jpg')} />
-                                            </a>
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/781f1ec4-895f-4bea-b20b-883d4edd0646.jpg')} />
-                                            </a>
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/840196eb-9970-4d05-9c0d-2dd709e1c0bb.jpg')} />
-                                            </a>
-                                        </div>
-                                        <button type="button" class="btn btn-outline-dark">More travels</button>
-                                    </div>
-                                </div>
-
-                                {/* <!-- Cooking section --> */}
-                                <div class="cooking">
-                                    <p class="title-header">Sweets</p>
-                                    <div class="other-photos-container">
-                                        <div class="d-flex">
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/a5bf70ed-6fdc-4fe9-bc6c-c4ffa006b2b9.jpg')} />
-                                            </a>
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/a1bdadae-f3ee-44bd-a891-fb8c457cee4d.jpg')} />
-                                            </a>
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/ac1d73e3-236c-4b1e-8b1d-fe71ccf129ec.jpg')} />
-                                            </a>
-                                        </div>
-                                        <div class="d-flex">
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/b6c4b7c9-cb29-4a43-8eaa-76fbc42a1ce2.jpg')} />
-                                            </a>
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/684d407a-d36c-486e-8f13-ae44c0ae5214.jpg')} />
-                                            </a>
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/32104e36-d96a-4f07-b0c9-d16c2fceb7c2.jpg')} />
-                                            </a>
-                                        </div>
-                                        <div class="d-flex">
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/6be3843f-8fcf-44a3-b335-38fab1a492ee.jpg')} />
-                                            </a>
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/017be026-4669-45c2-8e33-3dd8eca92010.jpg')} />
-                                            </a>
-                                            <a href="#">
-                                                <img
-                                                    src={require('../../assets/images/hobbies/10506f92-bad0-4f56-b0f8-c54030bcafd3.jpg')} />
-                                            </a>
-                                        </div>
-                                        <button type="button" class="btn btn-outline-dark">More sweets</button>
+                                        <ExpandableText>
+                                            <p>
+                                                Alicante is a city located in Spain. It sits along the Costa Blanca, is the capital of the province of Alicante, and the comarca of Alacantí. It is also a historic Mediterranean port. The population of the city of Alicante proper was 330,525, estimated as of 2016, ranking as the second-largest Valencian city. Including nearby municipalities, the Alicante conurbation had 452,462 residents. The population of the metropolitan area (including Elche and satellite towns) is 757,085 as of 2014 estimates, ranking as the eighth-largest metropolitan area of Spain.
+                                            </p>
+                                        </ExpandableText>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+                        {/* <!-- Sidebar - second main column --> */}
+                        <div class="col2 col-lg-4 d-flex flex-column">
+
+                            {/* <!-- Social network icons --> */}
+                            <div class="widget-wrap-social-networks">
+                                <p class="title-header">Follow me on</p>
+                                <ul class="social-networks d-flex">
+                                    <li>
+                                        <SocialIcon network="instagram" url="https://www.instagram.com/nicotuturuga/?igshid=19603gdl5y8a0&fbclid=IwAR2ilC241XTONY6kJr3a2XzwEyorZI-x8CdL7uQzFFudpa7Ngy9YRp1VuFk" bgColor="#000000"
+                                            title="instagram" target="_blank"></SocialIcon>
+                                    </li>
+                                    <li>
+                                        <SocialIcon network="facebook" bgColor="#000000"
+                                            title="facebook" target="_blank"></SocialIcon>
+                                    </li>
+                                    <li>
+                                        <SocialIcon network="github" bgColor="#000000"
+                                            url="https://github.com/nicoleta-tuturuga"
+                                            title="github" target="_blank"></SocialIcon>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            {/* <!-- Other travels section --> */}
+                            <div class="other-travels">
+                                <p class="title-header">Love for travel</p>
+                                <div class="other-photos-container">
+
+                                    <div class="d-flex">
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/05b79f59-8006-4d44-9afb-a5b69704c90e.jpg')} />
+                                        </a>
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/35af7dba-ab07-4160-969a-7526d4a512c3.jpg')} />
+                                        </a>
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/19fd0410-a760-459d-988a-6dd5d82b35fd.jpg')} />
+                                        </a>
+                                    </div>
+                                    <div class="d-flex">
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/47e6296d-5042-4a16-ba98-66accedda90e.jpg')} />
+                                        </a>
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/85e446bd-4668-4ef2-b117-ab4f71723eef.jpg')} />
+                                        </a>
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/29536ea1-7ca6-4eae-b04b-c04d112f5f87.jpg')} />
+                                        </a>
+                                    </div>
+                                    <div class="d-flex">
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/f0653171-8aaa-445f-b3f2-9db5f687f171.jpg')} />
+                                        </a>
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/781f1ec4-895f-4bea-b20b-883d4edd0646.jpg')} />
+                                        </a>
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/840196eb-9970-4d05-9c0d-2dd709e1c0bb.jpg')} />
+                                        </a>
+                                    </div>
+                                    <a href="#gallery-grid">
+                                        <button type="button" className="custom-styled-btn">More travels</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            {/* <!-- Cooking section --> */}
+                            <div class="cooking">
+                                <p class="title-header">Passion for cooking sweets</p>
+                                <div class="other-photos-container">
+                                    <div class="d-flex">
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/a5bf70ed-6fdc-4fe9-bc6c-c4ffa006b2b9.jpg')} />
+                                        </a>
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/a1bdadae-f3ee-44bd-a891-fb8c457cee4d.jpg')} />
+                                        </a>
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/ac1d73e3-236c-4b1e-8b1d-fe71ccf129ec.jpg')} />
+                                        </a>
+                                    </div>
+                                    <div class="d-flex">
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/b6c4b7c9-cb29-4a43-8eaa-76fbc42a1ce2.jpg')} />
+                                        </a>
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/684d407a-d36c-486e-8f13-ae44c0ae5214.jpg')} />
+                                        </a>
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/32104e36-d96a-4f07-b0c9-d16c2fceb7c2.jpg')} />
+                                        </a>
+                                    </div>
+                                    <div class="d-flex">
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/6be3843f-8fcf-44a3-b335-38fab1a492ee.jpg')} />
+                                        </a>
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/017be026-4669-45c2-8e33-3dd8eca92010.jpg')} />
+                                        </a>
+                                        <a href="#gallery-grid">
+                                            <img
+                                                src={require('../../assets/images/hobbies/10506f92-bad0-4f56-b0f8-c54030bcafd3.jpg')} />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="gallery-grid">
+                <div id="gallery-grid" className="travel-gallery">
+                    <p id="head-title">More photos from my travels</p>
                     <Gallery images={IMAGES} />
 
                 </div>
@@ -383,6 +376,9 @@ const Hobbies = () => {
                 <StickyBtn></StickyBtn>
 
             </div>
+
+            <Footer />
+
         </div >
     )
 }

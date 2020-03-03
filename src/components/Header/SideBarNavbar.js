@@ -16,10 +16,6 @@ const SideBarNavbar = () => {
                         <div className="side-nav-link">HOME</div>
                     </li>
                     <li className="side-nav-links">
-                        <Link className="bullet" to='/about'></Link>
-                        <div className="side-nav-link">ABOUT</div>
-                    </li>
-                    <li className="side-nav-links">
                         <Link className="bullet" to='/myCV'></Link>
                         <div className="side-nav-link">CV</div>
                     </li>

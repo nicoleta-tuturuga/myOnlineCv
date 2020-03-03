@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className="navbar fixed-top navbar-expand-lg ">
+            <nav className="navbar fixed-top navbar-expand-lg navbar-light">
                 <a className="navbar-brand" href="#">Nicoleta Tuturuga</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,9 +19,6 @@ const Navbar = () => {
                     <ul className="navbar-nav ml-auto d-flex justify-content-around">
                         <li className="nav-item active">
                             <Link className="nav-link" to='/'>Home</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to='/about'>About Me</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to='/myCV'>My CV</Link>

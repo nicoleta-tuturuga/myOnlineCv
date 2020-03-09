@@ -15,18 +15,18 @@ import Footer from "../footer/Footer";
 class HomePage extends React.Component {
 
     state = {
-        startAnimation: false
+        displayAboutMeSection: false
     }
 
     getAnimationStart = () => {
-        this.setState({ startAnimation: true })
+        this.setState({ displayAboutMeSection: true })
     }
 
     render() {
 
         let aboutMePage;
 
-        if (this.state.startAnimation === true) {
+        if (this.state.displayAboutMeSection === true) {
             aboutMePage = <AboutMePage ></AboutMePage>
         }
 
@@ -51,6 +51,7 @@ class HomePage extends React.Component {
                             <ul className="social-networks">
                                 <li>
                                     <SocialIcon network="facebook" bgColor="#000000"
+                                        url="https://www.facebook.com/tuturuga.niko"
                                         title="facebook" target="_blank"></SocialIcon>
                                 </li>
                                 <li>

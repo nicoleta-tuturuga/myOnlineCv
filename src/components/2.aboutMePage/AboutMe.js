@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 import "./AboutMe.css";
 import "../sideLinkPage.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Link } from "react-router-dom";
 import SideBarNavbar from "../Header/SideBarNavbar";
@@ -14,7 +13,6 @@ const AboutMe = () => {
     const [expanded, setExpanded] = useState(false);
     useEffect(() => {
         const timer = setTimeout(() => {
-            console.log('tes')
             setExpanded(true)
         }, 3000);
         return () => clearTimeout(timer);
@@ -86,12 +84,10 @@ const AboutMe = () => {
                         mine, which is programming and computer science. I was always passionate about technology and
                         curious about this topics so I decided to dive right into them, wishing to explore this new
                         field
-                        and become an expert. I' ll never forget th first time I managed to display an alert with "hello
-                        world". The feeling I felt was incredible, it was like I had super powers, it seemed awsome to
-                        me
-                        that I could create something like that with a little of code. I always liked to learn new
-                        things so
-                I think about this opportunity as an exciting challenge.</p>
+                        and become an expert. I' ll never forget the time I managed to display my first "hello
+                        world" alert. The feeling was incredible and it was like I had super powers, which made me very curious and motivated me to study more about this new field.
+                         I always liked to learn new
+                        things so I think about this opportunity as an exciting challenge.</p>
 
                     <div className="progress-bar-area">
                         <p>HTML</p>
@@ -120,9 +116,6 @@ const AboutMe = () => {
                         </div>
                     </div>
                 </div>
-                {/* </div> */}
-            
-            {/* <Footer /> */}
 
             </div>
 

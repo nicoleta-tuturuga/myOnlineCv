@@ -4,7 +4,7 @@ const theMoverPage = () => {
 
     return (
         <div>
-            <iframe src="./theMoverGame/oopTheMover.html" width="1000" height="1000"  frameborder="0"></iframe> 
+            <iframe src="./theMoverGame/oopTheMover.html" width="1100" height="700"  frameBorder="0"></iframe> 
         </div>
     )
 };

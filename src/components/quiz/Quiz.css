@@ -3,6 +3,7 @@
     font-size: 1.5rem;
     padding: 2rem;
     border: 1px solid black;
+    background-color: rgb(204, 204, 204);
     animation-duration: 5s;
     animation-delay: 3s;
 }

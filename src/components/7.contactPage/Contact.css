@@ -1,18 +1,21 @@
-
 /* Contact container */
 .contact-img-container {
     background-image: url("../../assets/images/backgrounds/contactMePage.jpg");
+    width: 100%;
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }
 
 .contact-info-container {
     font-size: 1.7rem;
-    margin: 15rem 18rem;
+    margin: 15rem 12rem;
 }
-
 
 .get-in-touch {
     font-size: 4rem;
@@ -21,10 +24,6 @@
     text-align: center;
 }
 
-/* .contact-forms {
-    width: 100%;
-} */
-
 .contact-info {
     background-color: rgb(204, 204, 204);
 }
@@ -32,7 +31,6 @@
 .google-map {
     width: 100%;
     animation-duration: 5s;
-
 }
 
 .google-map > iframe {
@@ -46,7 +44,7 @@
 
 .contact-info, .contact-me-form {
     border: 1px solid black;  
-    padding: 4rem;  
+    padding: 2rem;  
 }
 
 .contact-info > ul {
@@ -70,4 +68,10 @@
 
 .send-me-message-btn {
     animation-duration: 6s;    
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-info-container {
+        margin: 15rem 18rem;
+    }
 }

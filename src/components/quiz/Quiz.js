@@ -29,7 +29,7 @@ class Quiz extends React.Component {
     }
 
     getNextQuestion = () => {
-        if (this.state.index >= 0 && this.state.index < this.state.questions.length - 1) {
+        if (this.state.index >= 0 && this.state.index <= this.state.questions.length - 1) {
             if (this.state.savedValueFromRadio === this.state.questions[this.state.index].correctAnswer) {
                 this.setState({ guessedAnswersCount: this.state.guessedAnswersCount + 1 });
             }
@@ -38,7 +38,6 @@ class Quiz extends React.Component {
     }
 
     getAnswerValue = (event) => {
-        console.log(event)
         this.setState({ savedValueFromRadio: event.target.value })
     }
 
@@ -46,14 +45,13 @@ class Quiz extends React.Component {
     render() {
 
         let currentState = this.state.questions[this.state.index];
-        console.log(currentState);
-
         let content;
 
         if (this.state.index === -1) {
             content = <button onClick={this.getNextQuestion} className="custom-styled-btn">Start quiz</button>;
         } else if (this.state.index >= 0 && this.state.index <= this.state.questions.length - 1) {
             content = <div>
+                
                 <p>{currentState.question}</p>
 
                 <input type="radio" name="answer" value={currentState.answers[0]} id="quest1"

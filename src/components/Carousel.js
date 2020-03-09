@@ -1,7 +1,5 @@
 import React from "react";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import Carousel from 'react-bootstrap/Carousel'
 
 
@@ -27,7 +25,6 @@ const ControlledCarousel = (props) => {
 
         })
 
-    console.log(mappedCarouselImages)
 
     return (
 
@@ -37,38 +34,7 @@ const ControlledCarousel = (props) => {
                 direction={direction}
                 onSelect={handleSelect}>
 
-
                 {mappedCarouselImages}
-
-                {/* <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={mappedCarouselImages}
-                        alt="Second slide"
-                    />
-                </Carousel.Item> */}
-
-                {/* <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={require('../assets/images/carousel/2.jpeg')}
-                        alt="First slide"
-                    />
-
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
-                </Carousel.Item> */}
-
-
-                {/* <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={require('../assets/images/carousel/4.jpeg')}
-                        alt="Third slide"
-                    />
-                </Carousel.Item> */}
 
             </Carousel>
         </div>

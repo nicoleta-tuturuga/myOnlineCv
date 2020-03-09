@@ -17,7 +17,11 @@ import {
   faAngleDoubleDown, faGraduationCap, faFolderOpen, faCalendarAlt, faGlobeAmericas, faChevronCircleUp, faMobileAlt, faPaintBrush, faGlobe,
   faCheckCircle, faHeart, faAward, faSun, faMoon
 } from '@fortawesome/free-solid-svg-icons';
+
 import theMoverPage from "./pages/theMoverPage";
+import nasaApiPage from "./pages/nasaApiPage";
+import employeesApiPage from "./pages/employeesApiPage";
+import movieApp from "./pages/movieApp";
 
 library.add(faAngleDoubleDown);
 library.add(faGraduationCap);
@@ -56,6 +60,9 @@ class App extends React.Component {
               <Route path="/hobbies" component={Hobbies} />
               <Route path="/contactPage" component={Contact} />
               <Route path="/theMoverGame" component={theMoverPage} />
+              <Route path="/nasaAPI" component={nasaApiPage} />
+              <Route path="/employeesApiPage" component={employeesApiPage} />
+              <Route path="/movieApp" component={movieApp} />
 
             </Switch>
 

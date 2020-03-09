@@ -3,28 +3,20 @@ import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './theme';
 import { GlobalStyles } from './global';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 
 import './DarkMode.css';
 
 
 const DarkMode = () => {
 
-    const [theme, setTheme] = useState('light'); //light is passed as the initial value of usestate
+    const [theme, setTheme] = useState('light'); 
 
-
-    // The function that toggles between themes
     const toggleTheme = () => {
 
-        // if the theme is not light, then set it to dark
         if (theme === 'light') {
             setTheme('dark');
-
-            // otherwise, it should be light
         } else {
             setTheme('light');
-
         }
     }
 

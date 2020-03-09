@@ -17,30 +17,25 @@ const CVPage = () => {
     return (
 
         <div>
-            <div className="root-parent-myCV">
-                {/* <img
-                    src={require('../../assets/images/backgrounds/photo-1500989145603-8e7ef71d639e.jpg')}
-                /> */}
-            </div>
+            <div className="root-parent-myCV"></div>
+
             {/* <!-- CV Page container --> */}
-            <div class="cv-container">
+            <div className="cv-container">
                 <div className="side-link-page">
                     <p>my cv</p>
                 </div>
-                <div class="my-cv-contact-info d-flex flex-wrap">
+                <div className="my-cv-contact-info d-flex flex-wrap">
                     <p>Nicoleta Tuturuga</p>
                     <div className="d-flex flex-wrap">
                         <p>0741455980/</p>
                         <Link to="/contactPage">
-                            <a href="#">
                                 nicoleta.tuturuga@yahoo.com
-                            </a>
                         </Link>
                     </div>
                 </div>
                 <p id="head-title">My CV</p>
-                <div class="cv-container-wrapper d-flex justify-content-between flex-wrap">
-                    <div class="education-container col-xs-12 col-md-12 col-lg-6 animated slideInDown">
+                <div className="cv-container-wrapper d-flex justify-content-between flex-wrap">
+                    <div className="education-container col-xs-12 col-md-12 col-lg-6 animated slideInDown">
                         <p id="head-title">
                             <FontAwesomeIcon icon="graduation-cap"></FontAwesomeIcon> Education
                         </p>
@@ -51,12 +46,15 @@ const CVPage = () => {
                                 </button>
                                 <div>
                                     <FontAwesomeIcon icon="calendar-alt"></FontAwesomeIcon> October 2019 - March 2020
-                                    <p class="section-title">Informal School of IT - Advanced Web Module</p>
+                                    <p className="section-title">Informal School of IT - Advanced Web Module</p>
                                     <div className="collapse" id="collapseTimelineFirstBullet">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquid nihil voluptate
-                                            cumque
-                                            natus numquam excepturi et provident ipsum doloribus corrupti, repellendus eius. Quaerat
-                                            voluptatibus amet suscipit possimus error dolorum?</p>
+                                        <p><span>HTTP: </span> fundamentals about the HTTP protocol: request methods, headers, status code, its stateless functionality</p>
+                                        <p><span>Advanced HTML5 and CSS3: </span>advanced techniques on building a responsive and user-friendly interface</p>
+                                        <p><span>Advanced Javascipt: </span>from basic topics like variables, primitives, arrays, objects, conditional statements, and functions to advanced topics such as DOM manipulation, scope, hoisting, OOP concepts, constructors, prototype, AJAX, fetch API and promises.</p>
+                                        <p><span>ES6: </span> let and const, scoping concepts, arrow functions, getters and setters, template strings, destructuring, array methods(forEach, map, filter, reduce, every), async/await.</p>
+                                        <p><span>OOP: </span> basics about OOP and javascript's syntactic sugar classes, inheritance in javascript and objects, prototype and prototype chain.</p>
+                                        <p><span>React: </span> main concepts about React, props and state, functional based components and class based components.</p>
+                                        <p><span>GIT: </span> principles and basic commands about creating repositories, branches.</p>
                                     </div>
                                 </div>
                             </li>
@@ -66,11 +64,9 @@ const CVPage = () => {
                                 </button>
                                 <div>
                                     <FontAwesomeIcon icon="calendar-alt"></FontAwesomeIcon> January 2020 - Present
-                                    <p class="section-title">Iquest - Web development remote learning course</p>
+                                    <p className="section-title">Iquest - Web development remote learning course</p>
                                     <div className="collapse" id="collapseTimelineSecondBullet">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquid nihil voluptate cumque
-                                            natus numquam excepturi et provident ipsum doloribus corrupti, repellendus eius. Quaerat
-                                            voluptatibus amet suscipit possimus error dolorum?</p>
+                                        <p>HTML, CSS and JAVASCRIPT topics, learnt basic GIT and advanced GIT, working with API and servers, creating real responsive sites.</p>
                                     </div>
                                 </div>
                             </li>
@@ -80,26 +76,22 @@ const CVPage = () => {
                                 </button>
                                 <div>
                                     <FontAwesomeIcon icon="calendar-alt"></FontAwesomeIcon> October 2014 - July 2018
-                                    <p class="section-title">Law School - Babes Bolyai University, Cluj-Napoca</p>
+                                    <p className="section-title">Law School - Babes Bolyai University, Cluj-Napoca</p>
                                     <div className="collapse" id="collapseTimelineThirdBullet">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquid nihil voluptate cumque
-                                            natus numquam excepturi et provident ipsum doloribus corrupti, repellendus eius. Quaerat
-                                            voluptatibus amet suscipit possimus error dolorum?</p>
+                                        <p>Bachelor's Degree: Law School, University of Babes-Bolyai, Cluj-Napoca</p>
                                     </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="experience-container col-xs-12 col-md-12 col-lg-5 animated slideInUp">
+                    <div className="experience-container col-xs-12 col-md-12 col-lg-5 animated slideInUp">
                         <p id="head-title">
                             <FontAwesomeIcon icon="folder-open"></FontAwesomeIcon> Experience
                         </p>
                         <div>
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis expedita similique nemo eum
-                                dignissimos, obcaecati ipsum sapiente natus provident dolore fugit vel perferendis, sequi
-                                voluptatibus assumenda, voluptatum sed asperiores libero.
-                    </p>
+                                Developing remote projects on my own and as homeworks from Informal School and other courses I am part of.
+                            </p>
                         </div>
                         <div>
                             <p id="head-title">
@@ -110,15 +102,32 @@ const CVPage = () => {
                                     <p>English - Advanced</p>
                                 </li>
                                 <li>
-                                    <p>German - basic</p>
+                                    <p>German - Basic</p>
                                 </li>
                                 <li>
-                                    <p>Spanish - basic</p>
+                                    <p>Spanish - Basic</p>
                                 </li>
                             </ul>
                         </div>
                         <div>
                             <p id="head-title">Skills</p>
+                            <ul>
+                                <li>
+                                    Organized
+                                </li>
+                                <li>
+                                    Atention to details
+                                </li>
+                                <li>
+                                    Adaptability
+                                </li>
+                                <li>
+                                    Capability of working well under pressure
+                                </li>
+                                <li>
+                                    Good team-worker
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

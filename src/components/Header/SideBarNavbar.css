@@ -1,6 +1,5 @@
 .side-bar-nav-container {
     padding: 1rem;
-    /* margin: 3rem; */
     position: fixed;
     right: 1rem;
     top: 28rem;
@@ -26,6 +25,5 @@
 @media only screen and (max-width: 768px) {
     .side-bar-nav-container {
         visibility: hidden;
-        /* display: none; */
     }
 }

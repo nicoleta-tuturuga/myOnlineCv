@@ -14,42 +14,41 @@ import Footer from "../footer/Footer";
 class Projects extends React.Component {
 
     state = {
-        show: false
+        showMover: false,
+        showMovie: false,
+        showNasa: false,
+        showEmployees: false
     };
 
-    showModal = () => {
-        this.setState({ show: true });
-    };
+    // showModal = () => {
+    //     this.setState({ show: true });
+    // };
 
-    hideModal = () => {
-        this.setState({ show: false });
-    };
+    // hideModal = () => {
+    //     this.setState({ showMover: false });
+    // };
 
     render() {
 
         return (
             <div>
                 {/* <!-- Personal work - portofolio --> */}
-                <div class="portofolio-container">
+                <div className="portofolio-container">
                     <div className="side-link-page">
                         <p>my work</p>
                     </div>
                     <p id="head-title">Portofolio - my work</p>
-                    <div class="projects-container">
-                        <div class="row d-flex">
-                            <div class="the-mover-game col-xs-12 col-lg-6">
+                    <div className="projects-container">
+                        <div className="row d-flex">
+                            <div className="the-mover-game col-xs-12 col-lg-6">
                                 <img
                                     src={require("../../assets/images/projectsImgs/theMoverGame.png")} />
-                                <p>The mover game</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita molestias quas voluptate
-                                    soluta,
-                                    eos non, ipsam nisi aliquid atque aperiam ex deleniti iusto laudantium. Eaque quidem fugiat
-                                    maxime
-                                    eveniet nemo.
-                            </p>
+                                <p className="project-title">The mover game</p>
+                                <p>In this project the goal was to create a mini game app. There is one player (the small square on the top left on the screen). When the pages loaded the player has to move away from the obstacles which are dinamically moving twoards 
+                                </p>
                                 <Modal
-                                    show={this.state.show}
-                                    handleClose={this.hideModal}>
+                                    show={this.state.showMover}
+                                    handleClose={()=>this.setState({ showMover: false })}>
                                     <img className="modal-img"
                                         src={require("../../assets/images/projectsImgs/theMoverGame.png")} />
                                     
@@ -58,47 +57,81 @@ class Projects extends React.Component {
                                     </Link>
 
                                 </Modal>
-                                <button className="custom-styled-btn" type="button" onClick={this.showModal}>
+                                <button className="custom-styled-btn" type="button" onClick={()=>this.setState({ showMover: true })}>
                                     See more...
                                 </button>
                                 
-                                
-                               
                             </div>
-                            <div class="movie-app col-xs-12 col-lg-6">
+                            <div className="movie-app col-xs-12 col-lg-6">
                                 <img
-                                    src={require("../../assets/images/backgrounds/photo-1502465771179-51f3535da42c.jpg")} />                                <p>Movie Application</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita molestias quas voluptate
-                                    soluta,
-                                    eos non, ipsam nisi aliquid atque aperiam ex deleniti iusto laudantium. Eaque quidem fugiat
-                                    maxime
-                                    eveniet nemo.
-                    </p>
-                                <button className="custom-styled-btn" type="submit">See more...</button>
+                                    src={require("../../assets/images/projectsImgs/movieApp.png")} />                                
+                                    <p className="project-title">Movie Application</p>
+                                <p>about movie app.
+                                </p>
+                                <Modal
+                                    show={this.state.showMovie}
+                                    handleClose={()=>this.setState({ showMovie: false })}>
+                                    <img className="modal-img"
+                                        src={require("../../assets/images/projectsImgs/movieApp.png")} />
+                                    
+                                    <Link to='/movieApp'>
+                                        <button className="custom-styled-btn">See Project</button>
+                                    </Link>
+
+                                </Modal>
+                                <button className="custom-styled-btn" type="button" onClick={()=>this.setState({ showMovie: true })}>
+                                    See more...
+                                </button>                            
                             </div>
                         </div>
-                        <div class="row d-flex">
-                            <div class="the-mover-game col-xs-12 col-lg-6">
+                        <div className="row d-flex">
+                            <div className="movie-app col-xs-12 col-lg-6">
                                 <img
-                                    src={require("../../assets/images/backgrounds/photo-1502465771179-51f3535da42c.jpg")} />                                <p>The mover game</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita molestias quas voluptate
-                                    soluta,
-                                    eos non, ipsam nisi aliquid atque aperiam ex deleniti iusto laudantium. Eaque quidem fugiat
-                                    maxime
-                                    eveniet nemo.
-                            </p>
-                                <button className="custom-styled-btn" type="submit">See more...</button>
+                                    src={require("../../assets/images/projectsImgs/nasaAPI.png")} />                                
+                                    <p className="project-title">NASA API</p>
+                                <p> In this project the data are received from a NASA API, which shows a picture from space on a daily basis.
+                                    The task was to add an input type="date" in order to be able to get the astronomy picture of a selected date from any month and year.
+                                        </p>
+                                <Modal
+                                    show={this.state.showNasa}
+                                    handleClose={() => this.setState({showNasa: false})}>
+                                    <img className="modal-img"
+                                        src={require("../../assets/images/projectsImgs/nasaAPI.png")} />
+                                    
+                                    <Link to='/nasaAPI'>
+                                        <button className="custom-styled-btn">See Project</button>
+                                    </Link>
+
+                                </Modal>
+                                <button className="custom-styled-btn" type="button" onClick={() => this.setState({showNasa: true})}>
+                                    See more...
+                                </button>
                             </div>
-                            <div class="movie-app col-xs-12 col-lg-6">
+
+                            <div className="movie-app col-xs-12 col-lg-6">
                                 <img
-                                    src={require("../../assets/images/backgrounds/photo-1502465771179-51f3535da42c.jpg")} />                                <p>Movie Application</p>
+                                    src={require("../../assets/images/projectsImgs/employees.png")} />                                
+                                    <p className="project-title">Employees Agenda</p>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita molestias quas voluptate
                                     soluta,
                                     eos non, ipsam nisi aliquid atque aperiam ex deleniti iusto laudantium. Eaque quidem fugiat
                                     maxime
                                     eveniet nemo.
                                         </p>
-                                <button className="custom-styled-btn" type="submit">See more...</button>
+                                <Modal
+                                    show={this.state.showEmployees}
+                                    handleClose={() => this.setState({showEmployees: false})}>
+                                    <img className="modal-img"
+                                        src={require("../../assets/images/projectsImgs/employees.png")} />
+                                    
+                                    <Link to='/employeesApiPage'>
+                                        <button className="custom-styled-btn">See Project</button>
+                                    </Link>
+
+                                </Modal>
+                                <button className="custom-styled-btn" type="button" onClick={() => this.setState({showEmployees: true})}>
+                                    See more...
+                                </button>
                             </div>
                         </div>
                     </div>

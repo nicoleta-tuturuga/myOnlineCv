@@ -46,10 +46,12 @@ const Contact = () => {
                             <ul className="d-flex justify-content-around">
                                 <li>
                                     <SocialIcon network="facebook" bgColor="#000000"
+                                        url="https://www.facebook.com/tuturuga.niko"
                                         title="facebook" target="_blank"></SocialIcon>
                                 </li>
                                 <li>
                                     <SocialIcon network="linkedin" bgColor="#000000"
+                                        url="https://www.linkedin.com/in/nicoleta-tuturuga-8797041a3/"
                                         title="linkedin" target="_blank"></SocialIcon>
                                 </li>
                                 <li>

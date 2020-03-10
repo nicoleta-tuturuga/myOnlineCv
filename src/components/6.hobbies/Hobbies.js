@@ -249,6 +249,7 @@ const Hobbies = () => {
                                     </li>
                                     <li>
                                         <SocialIcon network="facebook" bgColor="#000000"
+                                            url="https://www.facebook.com/tuturuga.niko"
                                             title="facebook" target="_blank"></SocialIcon>
                                     </li>
                                     <li>

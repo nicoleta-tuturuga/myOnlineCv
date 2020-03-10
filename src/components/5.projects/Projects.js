@@ -66,7 +66,7 @@ class Projects extends React.Component {
                                 <img
                                     src={require("../../assets/images/projectsImgs/movieApp.png")} />                                
                                     <p className="project-title">Movie Application</p>
-                                <p>about movie app.
+                                <p>In this team project, the challenge was to create a movie app using resources from an API. My part was to fetch the data from the API and display them dinamically on the home page. I was also responsible with pagination of the app, styling the homepage and make it responsive
                                 </p>
                                 <Modal
                                     show={this.state.showMovie}
@@ -112,11 +112,7 @@ class Projects extends React.Component {
                                 <img
                                     src={require("../../assets/images/projectsImgs/employees.png")} />                                
                                     <p className="project-title">Employees Agenda</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita molestias quas voluptate
-                                    soluta,
-                                    eos non, ipsam nisi aliquid atque aperiam ex deleniti iusto laudantium. Eaque quidem fugiat
-                                    maxime
-                                    eveniet nemo.
+                                <p>In this project I created an employees agenda with data fetched dinamically from an API. Every employee had a name, age, salary, and profile picture. I was also able to use the POST method and dinamically create a new post on that given API.
                                         </p>
                                 <Modal
                                     show={this.state.showEmployees}

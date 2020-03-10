@@ -138,24 +138,21 @@ const CVPage = () => {
                         <li className="col-xs-12 col-md-12 col-lg-4">
                             <div>
                                 <FontAwesomeIcon icon="mobile-alt" className="icon animated flipInY"></FontAwesomeIcon> <span>Responsive Theme</span>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Officiis expedita similique nemo eum
+                                <p>Ability to make responsive themes for the web. Using mobile first approach, media queries and external libraries when needed.
                                 </p>
                             </div>
                         </li>
                         <li className="col-xs-12 col-md-12 col-lg-4">
                             <div>
                                 <FontAwesomeIcon icon="paint-brush" className="icon animated flipInY"></FontAwesomeIcon> <span>Design</span>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                        Officiis expedita similique nemo eum
+                                <p>Passionate about styling websites, constructing and designing them from scratch.
                                 </p>
                             </div>
                         </li>
                         <li className="col-xs-12 col-md-12 col-lg-4">
                             <div>
                                 <FontAwesomeIcon icon="globe" className="icon animated flipInY"></FontAwesomeIcon> <span>Web Development</span>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                        Officiis expedita similique nemo eum
+                                <p>Ability to combine HTML, CSS and JAVASCRIPT and create great user-friendly interfaces.
                                 </p>
                             </div>
                         </li>
@@ -164,8 +161,7 @@ const CVPage = () => {
                         <li className="col-xs-12 col-md-12 col-lg-4">
                             <div>
                                 <FontAwesomeIcon icon="check-circle" className="icon animated flipInY"></FontAwesomeIcon> <span>Bootstrap Support</span>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                        Officiis expedita similique nemo eum
+                                <p>Capabilities of using external libraries which are great for styling support, like bootstrap.
                                 </p>
                             </div>
                         </li>
@@ -173,16 +169,14 @@ const CVPage = () => {
                         <li className="col-xs-12 col-md-12 col-lg-4">
                             <div>
                                 <FontAwesomeIcon icon="heart" className="icon animated flipInY"></FontAwesomeIcon> <span>Dynamic Content</span>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                        Officiis expedita similique nemo eum
+                                <p>Advanced skills for making dynamic content for web pages, interactive and easy to use.
                                 </p>
                             </div>
                         </li>
                         <li className="col-xs-12 col-md-12 col-lg-4">
                             <div>
                                 <FontAwesomeIcon icon="award" className="icon animated flipInY"></FontAwesomeIcon> <span>Premium Work</span>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                        Officiis expedita similique nemo eum
+                                <p>Clean and organized code. Doing everything with passion gives the advantage of a well-done work. The principle is make it work, make it better, make it faster.
                                 </p>
                             </div>
                         </li>

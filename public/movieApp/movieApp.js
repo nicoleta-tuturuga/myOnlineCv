@@ -1,19 +1,20 @@
 var body = document.querySelector("body");
 var moviesList = document.getElementsByClassName("movies-list-container")[0];
+var prevLink = "";
 var nextLink = "";
 
 function getDataFromServer() {
-    fetch("https://ancient-caverns-16784.herokuapp.com/movies?take=12&skip=12")
-    .then(parseResponse)
-    .then(displayMovies)
+    fetch("https://movies-api-siit.herokuapp.com/movies?take=12&skip=0")
+        .then(parseResponse)
+        .then(displayMovies)
 }
 
 function parseResponse(response) {
     return response.json();
 }
 
-
 function displayMovies(movies) {
+
     // remove existing movies
     while (moviesList.firstChild) {
         moviesList.removeChild(moviesList.firstChild);
@@ -26,21 +27,31 @@ function displayMovies(movies) {
     currentPage.innerText = movies.pagination.currentPage;
     totalPages.innerText = movies.pagination.numberOfPages;
 
-    // update next and prev buttons link
+    // update prev and next buttons links
+    prevLink = movies.pagination.links.prev;
     nextLink = movies.pagination.links.next;
-    
+
+    if(prevLink === null) {
+        prevBtn.style.display = "none"
+    } else {
+        prevBtn.style.display = ""
+    }
+
+    if(nextLink === null) {
+        nextBtn.style.display = "none"
+    } else {
+        nextBtn.style.display = ""
+    }
 
     // create new movies
-    for(var i = 0; i < movies.results.length; i++){
+    for (var i = 0; i < movies.results.length; i++) {
         var movieItem = movies.results[i];
         createMovieContainer(movieItem);
     }
-
-    
-    console.log("End")
+    console.log(movies)
 }
 
-function createMovieContainer(movieItem){
+function createMovieContainer(movieItem) {
 
     var divMovieContainer = document.createElement("div");
     divMovieContainer.classList.add("movie-item");
@@ -48,14 +59,18 @@ function createMovieContainer(movieItem){
     var movieInterface = document.createElement("div");
     movieInterface.classList.add("movie-interface");
 
-    var movieTitle = document.createElement("h1");
+    var movieTitle = document.createElement("h2");
     movieTitle.innerHTML = movieItem.Title;
 
     var movieYear = document.createElement("p");
     movieYear.innerHTML = "Year: " + movieItem.Year;
 
     var movieImage = document.createElement("img");
-    movieImage.src = movieItem.Poster;
+    if(movieItem.Poster === undefined || movieItem.Poster === null){
+        movieImage.src = "../images/default.jpg"
+    } else {
+        movieImage.src = movieItem.Poster;
+    }
     movieImage.classList.add("movie-img");
 
     var seeMoreBtn = document.createElement("button");
@@ -105,40 +120,53 @@ function createMovieContainer(movieItem){
     movieDetailsContainer.appendChild(imdbVotes);
     movieDetailsContainer.appendChild(imdbMovieLink)
     movieDetailsContainer.appendChild(linkToImdb);
+    movieDetailsContainer.style.display="none";
 
 
     divMovieContainer.appendChild(movieInterface);
     divMovieContainer.appendChild(movieDetailsContainer);
     moviesList.append(divMovieContainer);
-    // body.appendChild(moviesList);
 
-    
-    seeMoreBtn.addEventListener("click", function(){
-        console.log(movieDetailsContainer)
-        if(movieDetailsContainer.style.display === "none"){
-            movieDetailsContainer.style.display = "visible";
-            console.log(movieDetailsContainer.style)
 
-            seeMoreBtn.innerHTML = "Show more..."
+    seeMoreBtn.addEventListener("click", function () {
+        if (this.parentElement.parentElement.childNodes[1].style.display !== "none") {
+            this.parentElement.parentElement.childNodes[1].style.display = "none";
+            
+            this.innerHTML = "Show more..."
         } else {
-            movieDetailsContainer.style.display = "none";
-            seeMoreBtn.innerHTML = "Show less";
+            
+            this.parentElement.parentElement.childNodes[1].style.display = "block";
+            this.innerHTML = "Show less...";
         }
-
-    })   
+    })
 }
 
 
 var prevBtn = document.getElementsByClassName("prev-btn")[0];
-    var nextBtn = document.getElementsByClassName("next-btn")[0];
+var nextBtn = document.getElementsByClassName("next-btn")[0];
 
-    nextBtn.addEventListener("click", function(){
-        fetch(nextLink)
+prevBtn.addEventListener("click", function () {
+    fetch(prevLink)
         .then(parseResponse)
         .then(displayMovies)
-    })
+        .then(window.onbeforeunload)
+})
+
+nextBtn.addEventListener("click", function () {
+    fetch(nextLink)
+        .then(parseResponse)
+        .then(displayMovies)
+        .then(window.onbeforeunload)
+})
+
+
+window.onbeforeunload = () =>
+    window.scrollTo({
+        top: 700,
+        left: 0,
+        behavior: 'smooth'
+    });
+
+
 
 getDataFromServer();
-
-// TODO: Hide Prev button when on first page
-// TODO: Hide Next button when on last page

@@ -14,22 +14,18 @@ class Player {
     _isOutOfBoundry() {
 
         if (this.left < 0) {
-            console.log("you're out"); //for left
             return true;
         }
 
         if (this.left > 1000 - 25) {
-            console.log("you're out"); //for right
             return true;
         }
 
         if (this.top < 0) {
-            console.log("you're out"); //for top
             return true;
         }
 
         if (this.top > 500 - 25) {
-            console.log("you're out"); //for down
             return true;
         }
 
@@ -138,9 +134,6 @@ class Player {
                 playerRect.top >= obstacleRect.bottom);
 
             if (overlap === true) {
-                console.log("overlap!");
-                console.log("player rect is " + playerRect);
-                console.log(obstacleRect);
                 return true;
             }
         }
@@ -200,13 +193,11 @@ class Obstacle {
 
     getObstacleRect() {
         var obstacleRect = this.obstacle.getBoundingClientRect();
-        console.log(obstacleRect);
         return obstacleRect;
     }
 
     updateObstaclePosition() {
         this.left = this.left - 2;
-        console.log("obstacle: " + this.obstacle)
         this.obstacle.style.left = this.left + "px";
     }
 

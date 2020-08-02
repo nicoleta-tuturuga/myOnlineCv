@@ -14,12 +14,12 @@ const ControlledCarousel = (props) => {
 
     let mappedCarouselImages = Object(props.carouselImg)
         .map(image => {
-            console.log(image)
             return <Carousel.Item
                 key={image}>
                 <img
                     className="d-block w-100"
                     src={image}
+                    alt=''
                 />
             </Carousel.Item>
 

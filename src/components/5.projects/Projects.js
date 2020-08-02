@@ -20,14 +20,6 @@ class Projects extends React.Component {
         showEmployees: false
     };
 
-    // showModal = () => {
-    //     this.setState({ show: true });
-    // };
-
-    // hideModal = () => {
-    //     this.setState({ showMover: false });
-    // };
-
     render() {
 
         return (
@@ -42,7 +34,8 @@ class Projects extends React.Component {
                         <div className="row d-flex">
                             <div className="the-mover-game col-xs-12 col-lg-6">
                                 <img
-                                    src={require("../../assets/images/projectsImgs/theMoverGame.png")} />
+                                    src={require("../../assets/images/projectsImgs/theMoverGame.png")} 
+                                    alt="" />
                                 <p className="project-title">The mover game</p>
                                 <p>In this project the goal was to create a mini game app. There is one player (the small square on the top left on the screen). When the pages loaded the player has to move away from the obstacles which are dinamically moving twoards 
                                 </p>
@@ -50,8 +43,9 @@ class Projects extends React.Component {
                                     show={this.state.showMover}
                                     handleClose={()=>this.setState({ showMover: false })}>
                                     <img className="modal-img"
-                                        src={require("../../assets/images/projectsImgs/theMoverGame.png")} />
-                                    
+                                        src={require("../../assets/images/projectsImgs/theMoverGame.png")} 
+                                        alt=""/>
+
                                     <Link to='/theMoverGame'>
                                         <button className="custom-styled-btn">See Project</button>
                                     </Link>
@@ -64,7 +58,8 @@ class Projects extends React.Component {
                             </div>
                             <div className="movie-app col-xs-12 col-lg-6">
                                 <img
-                                    src={require("../../assets/images/projectsImgs/movieApp.png")} />                                
+                                    src={require("../../assets/images/projectsImgs/movieApp.png")} 
+                                    alt="" />                                
                                     <p className="project-title">Movie Application</p>
                                 <p>In this team project, the challenge was to create a movie app using resources from an API. My part was to fetch the data from the API and display them dinamically on the home page. I was also responsible with pagination of the app, styling the homepage and make it responsive
                                 </p>
@@ -72,7 +67,8 @@ class Projects extends React.Component {
                                     show={this.state.showMovie}
                                     handleClose={()=>this.setState({ showMovie: false })}>
                                     <img className="modal-img"
-                                        src={require("../../assets/images/projectsImgs/movieApp.png")} />
+                                        src={require("../../assets/images/projectsImgs/movieApp.png")} 
+                                        alt="" />
                                     
                                     <Link to='/movieApp'>
                                         <button className="custom-styled-btn">See Project</button>
@@ -87,7 +83,8 @@ class Projects extends React.Component {
                         <div className="row d-flex">
                             <div className="movie-app col-xs-12 col-lg-6">
                                 <img
-                                    src={require("../../assets/images/projectsImgs/nasaAPI.png")} />                                
+                                    src={require("../../assets/images/projectsImgs/nasaAPI.png")} 
+                                    alt="" />                                
                                     <p className="project-title">NASA API</p>
                                 <p> In this project the data are received from a NASA API, which shows a picture from space on a daily basis.
                                     The task was to add an input type="date" in order to be able to get the astronomy picture of a selected date from any month and year.
@@ -96,7 +93,8 @@ class Projects extends React.Component {
                                     show={this.state.showNasa}
                                     handleClose={() => this.setState({showNasa: false})}>
                                     <img className="modal-img"
-                                        src={require("../../assets/images/projectsImgs/nasaAPI.png")} />
+                                        src={require("../../assets/images/projectsImgs/nasaAPI.png")} 
+                                        alt="" />
                                     
                                     <Link to='/nasaAPI'>
                                         <button className="custom-styled-btn">See Project</button>
@@ -110,7 +108,8 @@ class Projects extends React.Component {
 
                             <div className="movie-app col-xs-12 col-lg-6">
                                 <img
-                                    src={require("../../assets/images/projectsImgs/employees.png")} />                                
+                                    src={require("../../assets/images/projectsImgs/employees.png")} 
+                                    alt="" />                                
                                     <p className="project-title">Employees Agenda</p>
                                 <p>In this project I created an employees agenda with data fetched dinamically from an API. Every employee had a name, age, salary, and profile picture. I was also able to use the POST method and dinamically create a new post on that given API.
                                         </p>
@@ -118,7 +117,8 @@ class Projects extends React.Component {
                                     show={this.state.showEmployees}
                                     handleClose={() => this.setState({showEmployees: false})}>
                                     <img className="modal-img"
-                                        src={require("../../assets/images/projectsImgs/employees.png")} />
+                                        src={require("../../assets/images/projectsImgs/employees.png")} 
+                                        alt="" />
                                     
                                     <Link to='/employeesApiPage'>
                                         <button className="custom-styled-btn">See Project</button>
@@ -139,7 +139,6 @@ class Projects extends React.Component {
                 </div>
 
                 <Footer />
-
             </div>
         )
     }

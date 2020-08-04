@@ -30,9 +30,9 @@ class Projects extends React.Component {
                         <p>my work</p>
                     </div>
                     <p id="head-title">Portofolio - my work</p>
-                    <div className="projects-container">
-                        <div className="row d-flex">
-                            <div className="the-mover-game col-xs-12 col-lg-6">
+                    <div className="projects-container d-flex flex-column">
+                        <div className="row d-flex justify-content-center">
+                            <div className="the-mover-game col-xs-12 col-lg-5">
                                 <img
                                     src={require("../../assets/images/projectsImgs/theMoverGame.png")} 
                                     alt="" />
@@ -56,7 +56,7 @@ class Projects extends React.Component {
                                 </button>
                                 
                             </div>
-                            <div className="movie-app col-xs-12 col-lg-6">
+                            <div className="movie-app col-xs-12 col-lg-5">
                                 <img
                                     src={require("../../assets/images/projectsImgs/movieApp.png")} 
                                     alt="" />                                
@@ -80,8 +80,8 @@ class Projects extends React.Component {
                                 </button>                            
                             </div>
                         </div>
-                        <div className="row d-flex">
-                            <div className="movie-app col-xs-12 col-lg-6">
+                        <div className="row d-flex justify-content-center">
+                            <div className="movie-app col-xs-12 col-lg-5">
                                 <img
                                     src={require("../../assets/images/projectsImgs/nasaAPI.png")} 
                                     alt="" />                                
@@ -106,7 +106,7 @@ class Projects extends React.Component {
                                 </button>
                             </div>
 
-                            <div className="movie-app col-xs-12 col-lg-6">
+                            <div className="movie-app col-xs-12 col-lg-5">
                                 <img
                                     src={require("../../assets/images/projectsImgs/employees.png")} 
                                     alt="" />                                

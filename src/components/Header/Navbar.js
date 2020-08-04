@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <div>
             <nav className="navbar fixed-top navbar-expand-lg navbar-light">
-                <a className="navbar-brand" href="#">Nicoleta Tuturuga</a>
+                <p className="navbar-brand">Nicoleta Tuturuga</p>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

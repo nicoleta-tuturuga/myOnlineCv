@@ -1,37 +1,41 @@
 /* Portofolio Container */
 
 .portofolio-container {
-    font-size: 1.7rem;
-    margin: 10rem 5rem;
+  font-size: 1.7rem;
+  margin: 10rem 5rem;
 }
 
 .the-mover-game, .movie-app {
-    margin-bottom: 10rem;
+  margin-bottom: 10rem;
+  border: 1px solid rgb(109, 95, 95);
+  margin-right: 4rem;
+  padding: 3rem;
+  min-width: 20rem;
 }
 
 .the-mover-game>img, .movie-app>img {
-    width: 100%;
-    height: 30rem;
+  width: 100%;
+  height: 30rem;
 }
 
 .project-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
 }
 
 .modal-img {
-    width: 100%;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-    .portofolio-container {
-        margin: 15rem 12rem;
-    }
+  .portofolio-container {
+    margin: 15rem 12rem;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-    .portofolio-container {
-        margin: 15rem 18rem;
-    }
+  .portofolio-container {
+    margin: 15rem 18rem;
+  }
 }

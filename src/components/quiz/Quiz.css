@@ -6,6 +6,7 @@
     background-color: rgb(204, 204, 204);
     animation-duration: 5s;
     animation-delay: 3s;
+    min-width: 25rem;
 }
 
 .quiz-container label {

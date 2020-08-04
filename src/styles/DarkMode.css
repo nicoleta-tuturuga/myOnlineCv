@@ -1,25 +1,27 @@
 .toggle-theme-btn {
-    position: absolute;
-    top: 6rem;
-    right: 0rem; 
-    height: 3rem;
-    width: 3rem; 
-    cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  top: 6rem;
+  right: 0rem;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  border: none;
 }
 
 .toggle-theme-btn:focus {
-    outline: none;
+  outline: none;
 }
 
 .dark-moon {
-    width: 100%;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-    .toggle-theme-btn {
-        top: 10rem;
-        right: 1rem;
-        height: 5rem;
-        width: 5rem;
-    }
+  .toggle-theme-btn {
+    top: 10rem;
+    right: 1rem;
+    height: 5rem;
+    width: 5rem;
+  }
 }

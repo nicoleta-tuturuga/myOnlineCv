@@ -10,12 +10,20 @@
     background-position: center;
     background-size: cover;
     z-index: -1;
-}
+  }
 
-.cv-container {
-    margin: 5rem 3rem;
-    font-size: 1.7rem;
-}
+  .education-container,
+  .experience-container,
+  .programming-skills {
+    min-width: 30rem;
+  }
+
+
+  
+  .cv-container {
+      margin: 5rem 3rem;
+      font-size: 1.7rem;
+  }
 
 .cv-container li {
     list-style: none;
@@ -112,6 +120,7 @@
 .programming-skills div {
     background-color: rgb(155, 153, 153);
     padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 .programming-skills span {
@@ -142,5 +151,9 @@
 @media only screen and (min-width: 1000px) {
     .cv-container {
         margin: 15rem 18rem;
+    }
+
+    .programming-skills div {
+      min-height: 25rem;
     }
 }

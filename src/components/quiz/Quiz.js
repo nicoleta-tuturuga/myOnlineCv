@@ -9,7 +9,7 @@ class Quiz extends React.Component {
             [
                 {
                     question: "What is my first name?",
-                    answers: ["Diana", "Maria", "Nico"],
+                    answers: ["Diana", "Nadia", "Nico"],
                     correctAnswer: "Nico"
                 },
                 {

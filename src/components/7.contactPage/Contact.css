@@ -1,78 +1,97 @@
 /* Contact container */
+
 .contact-img-container {
-    background-image: url("../../assets/images/backgrounds/contactMePage.jpg");
-    width: 100%;
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: -1;
+  background-image: url("../../assets/images/backgrounds/contactMePage.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .contact-info-container {
-    font-size: 1.7rem;
-    margin: 15rem 12rem;
+  font-size: 1.7rem;
+  margin: 15rem 12rem;
 }
 
 .get-in-touch {
-    font-size: 4rem;
-    color: rgb(43, 39, 39);
-    margin-bottom: 2rem;
-    text-align: center;
+  font-size: 4rem;
+  color: rgb(43, 39, 39);
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .contact-info {
-    background-color: rgb(204, 204, 204);
+  background-color: rgb(204, 204, 204);
 }
 
 .google-map {
-    width: 100%;
-    animation-duration: 5s;
+  width: 100%;
+  animation-duration: 5s;
 }
 
-.google-map > iframe {
-    width: 100%;
-    height: 30rem;
+.google-map>iframe {
+  width: 100%;
+  height: 30rem;
 }
 
 .contact-me-form {
-    background-color: rgb(204, 204, 204);
+  background-color: rgb(204, 204, 204);
 }
 
 .contact-info, .contact-me-form {
-    border: 1px solid black;  
-    padding: 2rem; 
-    min-width: 30rem;
+  border: 1px solid black;
+  padding: 2rem;
+  min-width: 30rem;
 }
 
-.contact-info > ul {
-    list-style-type: none;
+.contact-info>ul {
+  list-style-type: none;
 }
 
 .form {
-    margin-top: 5rem;
-    animation-duration: 3s;
+  margin-top: 5rem;
+  animation-duration: 3s;
 }
 
 .form input, textarea {
-    width: 90%;
-    margin-bottom: 2rem;
-    padding: 0.7rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 0.7rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.alertInput {
+  border: 2px solid rgb(226, 64, 64);
 }
 
 .send-me-message-title {
-    animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 .send-me-message-btn {
-    animation-duration: 6s;    
+  animation-duration: 6s;
 }
 
 @media only screen and (min-width: 768px) {
-    .contact-info-container {
-        margin: 15rem 18rem;
-    }
+  .contact-info-container {
+    margin: 15rem 18rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact-info, .contact-me-form {
+    padding: 6rem;
+  }
 }

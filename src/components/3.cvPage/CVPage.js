@@ -86,11 +86,14 @@ const CVPage = () => {
                     </div>
                     <div className="experience-container col-xs-12 col-md-12 col-lg-5 animated slideInUp">
                         <p id="head-title">
-                            <FontAwesomeIcon icon="folder-open"></FontAwesomeIcon> Experience
+                            <FontAwesomeIcon icon="folder-open"></FontAwesomeIcon>Work Experience
                         </p>
                         <div>
                             <p>
-                                Developing remote projects on my own and as homeworks from Informal School and other courses I am part of.
+                              <span className="section-title">Iquest Group</span> - july 2020 - Front-end intern
+                            </p>
+                            <p>
+                            <span className="section-title">Arobs Software</span> - february-march 2020 - QA Automation intern
                             </p>
                         </div>
                         <div>

@@ -17,7 +17,8 @@ class Contact extends React.Component {
     name: "",
     nameErrorLength: "",
     email: "",
-    emailErrorInvalid: ""
+    emailErrorInvalid: "",
+    formSuccessfullySent: false
   }
 
 
@@ -30,27 +31,39 @@ class Contact extends React.Component {
     let nameErrorLength = "";
     let emailErrorInvalid = "";
 
-    console.log("Before: " + this.state.name)
     if (this.state.name.length <= 2) {
       nameErrorLength = "Name must be at least 3 characters long."
-      console.log(this.state.name)
     }
 
     if (!this.state.email.includes("@")) {
       emailErrorInvalid = "Please enter a valid email.";
     }
 
-    this.setState({
-      nameErrorLength,
-      emailErrorInvalid
-    });
+    if (nameErrorLength || emailErrorInvalid) {
+      this.setState({
+        nameErrorLength,
+        emailErrorInvalid
+      });
+      return false;
+    }
 
     return true;
   }
 
   handleValidation = event => {
     event.preventDefault();
-    this.validateForm();
+    const isValid = this.validateForm();
+
+    //clear form
+    if (isValid) {
+      this.setState({
+        formSuccessfullySent: true,
+        name: '',
+        email: '',
+        nameErrorLength: '',
+        emailErrorInvalid: ''
+      });
+    }
   }
 
   render() {
@@ -111,8 +124,8 @@ class Contact extends React.Component {
                       placeholder="Your name*"
                       value={this.state.name}
                       onChange={this.handleChange} />
-                    <div 
-                    className={(this.state.nameErrorLength) ? 'alert alert-danger visible' : 'alert alert-danger hidden'}>
+                    <div
+                      className={(this.state.nameErrorLength) ? 'alert alert-danger visible' : 'alert alert-danger hidden'}>
                       {this.state.nameErrorLength}
                     </div>
 
@@ -128,6 +141,11 @@ class Contact extends React.Component {
 
                     <input type="text" placeholder="Subject" />
                     <textarea placeholder="Type your message here"></textarea>
+
+                    <div className={(this.state.formSuccessfullySent) ? 'alert alert-success visible' : 'alert alert-success hidden'}>
+                      Your message was sent succesfully.
+                    </div>
+
                     <div className="send-me-message-btn animated fadeInUp">
                       <button className="custom-styled-btn" type="submit">Send Message</button>
                     </div>
